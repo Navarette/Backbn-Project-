@@ -19,8 +19,6 @@ services:
       dockerfile: Dockerfile
       context: ./server
     volumes:
-      #Qui mappa tutto il contenuto della cartella locale client nella cartella app dell'immagine
-      #Ricorda che la WORKDIR dell'immagine è la cartella app
-      - ./server:/app
+        - ./server:/app
     ports:
       - 5000:5000
